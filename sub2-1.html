@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>브레인테크</title>
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/css/default.css?ver=210618">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/font_defualt.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/layout.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/sub.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/element.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/btn.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/board_modify.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/board_modify_responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/animate.min.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/swiper_layout.css">
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/swiper/dist/css/swiper.min.css">
+
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/slick-1.8.1/slick/slick/slick.css">
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/slick-1.8.1/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/bootstrap_modified.css">
+
+    <!--
+<link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/owl/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/owl/assets/owl.theme.default.css">
+-->
+
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/sidebar-menu.css">
+    <link rel='stylesheet' href='http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/hiraku.css'>
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/style.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/modify.css">
+
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/responsive.css">
+    <!--[if lte IE 8]>
+<script src="http://brainpcb.co.kr/new1/js/html5.js"></script>
+<![endif]-->
+    <script>
+        // 자바스크립트에서 사용하는 전역변수 선언
+        var g5_url = "http://brainpcb.co.kr/new1";
+        var g5_bbs_url = "http://brainpcb.co.kr/new1/bbs";
+        var g5_is_member = "";
+        var g5_is_admin = "";
+        var g5_is_mobile = "";
+        var g5_bo_table = "";
+        var g5_sca = "";
+        var g5_editor = "";
+        var g5_cookie_domain = "";
+    </script>
+
+    <script src="http://brainpcb.co.kr/new1/js/jquery-1.12.4.min.js"></script>
+    <script src="http://brainpcb.co.kr/new1/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="http://brainpcb.co.kr/new1/js/jquery.menu.js?ver=210618"></script>
+    <script src="http://brainpcb.co.kr/new1/js/common.js?ver=210618"></script>
+    <script src="http://brainpcb.co.kr/new1/js/wrest.js?ver=210618"></script>
+    <script src="http://brainpcb.co.kr/new1/js/placeholders.min.js"></script>
+    <script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/swiper/dist/js/swiper.ani.js"></script>
+    <script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/swiper/dist/js/swiper.min.js"></script>
+    <!--<script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/bootstrap-carousel/carousel.js"></script>-->
+    <!--<script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/owl/owl.carousel.min.js"></script>-->
+    <script type="text/javascript"
+        src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/jquery-parallax/jquery.parallax-1.1.3.js">
+    </script>
+    <script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/slick-1.8.1/slick/slick/slick.min.js">
+    </script>
+    <script type='text/javascript'
+        src='http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mouse/gambit-smoothscroll-min.js'></script>
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/js/font-awesome/css/font-awesome.min.css">
+
+
+    <!-- raon : 2021-11-18 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+     <script defer src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+     <script defer src="/kmong-brainTect/js/sub2.js"></script>
+     <!-- map API -->
+     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mey2cwij8q">
+    </script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/kmong-brainTect/css/css1.css">
+    
+</head>
+<body>
+    <main id="sub_content">
+        <div class="container ">
+            <div class="sub-container__titleWrap">
+                <h1 class="sub-container__title">PCB 사업부</h1>
+            </div>
+            <ul class="tab_wrap menu-4">
+                <li class="on"><a href="javascript:void(0)">CCL</a></li>
+                <li><a href="javascript:void(0)">MCCL</a></li>
+                <li><a href="javascript:void(0)">PSR INK</a></li>
+                <li><a href="javascript:void(0)">PCB OEM/EMS</a></li>
+            </ul>
+            <section class="tab_cont_wrap">
+                <!-- tab 01 -->
+                <article class="tab_cont ccl on">
+                    <div class="slide_wrap">
+                        <div class="slide">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 myCcl2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/ccl_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/ccl_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/ccl_slide_main01.jpg" />
+                                    </div>
+                                </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper myCcl">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/ccl_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/ccl_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/ccl_slide_sub01.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_txt">
+                            <h2 class="slide_tit">CCL</h2>
+                            <p class="slide_desc">인쇄회로기판(PCB)의 핵심소재로서 <br>
+                                전자제품의 가장 중요한 중추적인 역할을 하는 핵심 소재입니다.
+                                </p>
+                        </div>
+                    </div>
+                    <ul class="info_wrap">
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Thickness</span>
+                                    <h3>두께</h3>
+                                </dt>
+                                <dd>
+                                    <span>0.1T ~ 4.0T <br>
+                                    (18㎛, 35㎛, 70㎛ <br>
+                                    [Single & Double side]) <br>
+                                    / 외 두께 주문 제작 가능</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Product</span>
+                                    <h3>제품</h3>
+                                </dt>
+                                <dd>
+                                    <span>Middle Tg</span>
+                                    <span>High Tg</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Classification</span>
+                                    <h3>분류</h3>
+                                </dt>
+                                <dd>
+                                    <span>Normal</span>
+                                    <span>Halogen Free</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Features</span>
+                                    <h3>특징</h3>
+                                </dt>
+                                <dd>
+                                    <span>향상된 고온 신장율</span>
+                                    <span>우수한 접착성을 가진 <br>
+                                    Low Profile Copper Foil</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </article>
+                <!-- tab 02 -->
+                <article class="tab_cont mccl">
+                    <div class="slide_wrap">
+                        <div class="slide">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 myMccl2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_main01.jpg" />
+                                    </div>
+                                </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper myMccl">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/mccl_slide_sub01.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_txt">
+                            <h2 class="slide_tit">MCCL</h2>
+                            <p class="slide_desc">메탈 베이스를 사용하며 일반 PCB보다 방열 특성과 열충격성 모두 우수하여 LED용 기판으로 폭 넓게 적용하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <ul class="info_wrap">
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Thickness</span>
+                                    <h3>두께</h3>
+                                </dt>
+                                <dd>
+                                    <span>0.6T ~ 2.5T (18㎛, 35㎛) <br>
+                                        / 외 두께 주문 제작 가능
+                                    </span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Product structure</span>
+                                    <h3>제품 구조</h3>
+                                </dt>
+                                <dd>
+                                    <span>Copper foil</span>
+                                    <span>Prepreg[Epoxy+filler]</span>
+                                    <span>Alumium base plate</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Technology</span>
+                                    <h3>기술</h3>
+                                </dt>
+                                <dd>
+                                    <span>덴카社와 기술 제휴를 통해 <br>원천 기술 획득</span>
+                                    <span>특허 및 UL 인증</span>
+                                    <span>범용 열전도도 2W/mK 제품 개발완료</span>
+                                    <span>고 방열 및 고 열전도율급 제품 개발완료</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Features</span>
+                                    <h3>특징</h3>
+                                </dt>
+                                <dd>
+                                    <span>방열 특성 우수</span>
+                                    <span>열충격성 우수</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </article>
+                <!-- tab 03 -->
+                <article class="tab_cont psr">
+                    <div class="slide_wrap">
+                        <div class="slide">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 myPsr2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/psr_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/psr_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/psr_slide_main01.jpg" />
+                                    </div>
+                                </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper myPsr">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/psr_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/psr_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/psr_slide_sub01.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_txt">
+                            <h2 class="slide_tit">PSR INK</h2>
+                            <p class="slide_desc">PCB의 산화를 막아 수명을 연장하며 <br>제품의 이미지를 상승시킵니다.</p>
+                        </div>
+                    </div>
+                    <ul class="info_wrap third">
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Kinds</span>
+                                    <h3>종류</h3>
+                                </dt>
+                                <dd>
+                                    <span>회로 형성용</span>
+                                    <span>Soler Resist</span>
+                                    <span>Marking ink</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Purpose</span>
+                                    <h3>목적</h3>
+                                </dt>
+                                <dd>
+                                    <span>Soler Resist 회로를 보호하는 <br>용도로 사용합니다.</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Technology</span>
+                                    <h3>제조공정</h3>
+                                </dt>
+                                <dd>
+                                    <span>일반적으로 Ink의 제조 공정은 <br>배합, 연육, 숙성, 조정, 검사, <br>포장 순으로 제조됩니다.</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </article>
+                <!-- tab 04 -->
+                <article class="tab_cont pcb">
+                    <div class="slide_wrap">
+                        <div class="slide">
+                            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 myPcb2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/pcb_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/pcb_slide_main01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/pcb_slide_main01.jpg" />
+                                    </div>
+                                </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            </div>
+                            <div thumbsSlider="" class="swiper mySwiper myPcb">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/pcb_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/pcb_slide_sub01.jpg" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/kmong-brainTect/img/pcb_slide_sub01.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide_txt">
+                            <h2 class="slide_tit">PCB OEM / EMS</h2>
+                            <p class="slide_desc">브레인테크는 PCB 제조 및 서비스를 전담하여 <br>자체적으로 생산합니다.</p>
+                        </div>
+                    </div>
+                    <ul class="info_wrap">
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Thickness</span>
+                                    <h3>가격</h3>
+                                </dt>
+                                <dd>
+                                    <span>합리적 가격과 대응력을 <br>제공하는 회사</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Product structure</span>
+                                    <h3>납기일</h3>
+                                </dt>
+                                <dd>
+                                    <span>브레인테크는 <br>
+                                        단순 빠른 납기가 아닌 <br>
+                                        정확한 납기를 지향합니다.</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Technology</span>
+                                    <h3>기술</h3>
+                                </dt>
+                                <dd>
+                                    <span>20년 이상의 노하우 및 <br>
+                                        고난이도 제품 생산이력으로 <br>
+                                        기술대응이 원활합니다.</span>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <span class="green">Features</span>
+                                    <h3>강점</h3>
+                                </dt>
+                                <dd>
+                                    <span>브레인테크는 설계부터 <br>
+                                        제조, 생산까지 <br>
+                                        자체적으로 진행합니다.</span>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="pcb_info">
+                <div class="pcb_phone"><span>032-814-6417</span></div>
+                <div class="pcb_mail"><span>brainpcb@brainpcb.co.kr</span></div>
+            </section>
+        </div>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>

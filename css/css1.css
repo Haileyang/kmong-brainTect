@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Noto Sans KR', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
 
 /* ========================== COMMON ==========================*/
@@ -85,8 +86,6 @@ ul,li{
     background:url(/kmong-brainTect/img/intro-bg-circle) no-repeat center / 100%;
     position: absolute; bottom: -225px; left: 0;
     z-index: -1;
-    border: 1px solid #000;
-
 }
 .bottom-banner{width: 100%;}
 @media(max-width: 1400px){
@@ -233,7 +232,6 @@ ul,li{
     }
 }
 @media(max-width: 767px){
-
     .sub-tabVisual-text{display: block;
         padding: 40px 0 25px 0;
     }
@@ -243,3 +241,436 @@ ul,li{
     .sub-tabVisual-text h1{margin-bottom: 25px;}
     .sub-tab-content + .sub-tab-content{margin-top: 60px;}
 }
+
+
+
+
+/* ========================== TAB ==========================*/
+.tab_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 110px;
+  }
+  .tab_wrap.menu-3 li {
+    width: calc(100% / 3)
+  }
+  .tab_wrap.menu-4 li {
+    width: 25%;
+  }
+  .tab_wrap li a {
+    display: block;
+    width: 100%;
+    height: 54px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    line-height: 54px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.03rem;
+    background-color: #efefef;
+  }
+  .tab_wrap li:first-child a {
+    border-left: 1px solid #cfcfcf;
+  }
+  .tab_wrap li:last-child a {
+    border-right: 1px solid #cfcfcf;
+  }
+  .tab_wrap li + li {
+    border-left: 1px solid #cfcfcf;
+  }
+  .tab_wrap li.on a {
+    font-weight: 700;
+    background-color: #fff;
+    border-bottom: 0;
+  }
+  
+  /* ========================== CONTENTS ==========================*/
+  .tab_cont {
+    display: none;
+  }
+  .tab_cont.on {
+    display: block;
+  }
+  /* ========================== CONTENTS SLIDE WRAP ==========================*/
+  .tab_cont .slide_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 75px;
+  }
+  /* ========================== CONTENTS SLIDE ==========================*/
+  .tab_cont .slide_wrap .slide {
+    max-width: 502px;
+    width: 100%;
+    padding: 15px;
+    margin-right: 58px;
+    border: 1px solid #e1e1e1;
+    background-color: #fcfcfc;
+  }
+  .tab_cont .slide_wrap .slide img {
+    width: 100%;
+  }
+  .tab_cont .slide_wrap .slide .mySwiper2 {
+    margin-bottom: 20px;
+  }
+  .tab_cont .slide_wrap .slide .swiper-button-next, .tab_cont .slide_wrap .slide .swiper-button-prev {
+    width: 28px!important;
+    height: 28px!important;
+    border-radius: 100%!important;
+    background-color: rgba(184, 184, 184, 0.7)!important;
+    -webkit-transition: all 0.3s!important;
+    transition: all 0.3s!important;
+    padding: 0;margin: 0;
+    background-image: none;
+  }
+  .tab_cont .slide_wrap .slide .swiper-button-next:hover, .tab_cont .slide_wrap .slide .swiper-button-prev:hover {
+    background-color: #b8b8b8;
+  }
+  .tab_cont .slide_wrap .slide .swiper-button-next:after, .tab_cont .slide_wrap .slide .swiper-button-prev:after {
+    font-size: 17px;
+  }
+  
+  /* ========================== CONTENTS SLIDE TEXT ==========================*/
+  .tab_cont .slide_wrap .slide_txt {
+    width: calc(100% - 560px);
+    flex: 1;
+  }
+  .tab_cont .slide_wrap .slide_txt .slide_tit {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+  .tab_cont .slide_wrap .slide_txt .slide_desc {
+    font-size: 20px;
+    line-height: 36px;
+    color: #525252;
+    word-break: keep-all;
+  }
+  /* ========================== CONTENTS INFO WRAP ==========================*/
+  .tab_cont .info_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .tab_cont .info_wrap.third li {
+    width: calc(33.3333333333% - 23px);
+  }
+  .tab_cont .info_wrap li {
+    width: calc(25% - 23px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 30px;
+    background-color: #f8f8f8;
+  }
+  .tab_cont .info_wrap li + li {
+    margin-left: 30px;
+  }
+  .tab_cont .info_wrap li dl {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  /* ========================== CONTENTS INFO TOP ==========================*/
+  .tab_cont .info_wrap li dt {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .tab_cont .info_wrap li dt span {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 16px;
+  }
+  
+  .tab_cont .info_wrap li dt span.green {color: #b3e248;}
+  .tab_cont .info_wrap li dt span.blue {color: #5baaff;}
+  .tab_cont .info_wrap li dt h3 {
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
+  .tab_cont .info_wrap li dt::after {
+    content: "";
+    display: block;
+    width: 117px;
+    height: 84px;
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+  }
+  /* ========================== CONTENTS INFO IMG ==========================*/
+  .tab_cont.ccl .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/ccl_info01.png);}
+  .tab_cont.ccl .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/ccl_info02.png);}
+  .tab_cont.ccl .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/ccl_info03.png);}
+  .tab_cont.ccl .info_wrap li:nth-child(4) dt::after {background-image: url(/kmong-brainTect/img/ccl_info04.png);}
+  .tab_cont.mccl .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/ccl_info01.png);}
+  .tab_cont.mccl .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/mccl_info02.png);}
+  .tab_cont.mccl .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/mccl_info03.png);}
+  .tab_cont.mccl .info_wrap li:nth-child(4) dt::after {background-image: url(/kmong-brainTect/img/ccl_info04.png);}
+  .tab_cont.psr .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/psr_info01.png);}
+  .tab_cont.psr .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/psr_info02.png);}
+  .tab_cont.psr .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/psr_info03.png);}
+  .tab_cont.pcb .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/pcb_info02.png);}
+  .tab_cont.pcb .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/pcb_info02.png);}
+  .tab_cont.pcb .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/mccl_info03.png);}
+  .tab_cont.pcb .info_wrap li:nth-child(4) dt::after {background-image: url(/kmong-brainTect/img/ccl_info04.png);}
+  .tab_cont.android-box .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/box_info01.png);}
+  .tab_cont.android-box .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/box_info02.png);}
+  .tab_cont.android-box .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/box_info03.png);}
+  
+  
+  .tab_cont .info_wrap li dd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 110px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  /* ========================== CONTENTS INFO TEXT ==========================*/
+  .tab_cont .info_wrap li dd span {
+    display: block;
+    padding-left: 13px;
+    font-size: 16px;
+    color: #535353;
+    line-height: 30px;
+    letter-spacing: -0.03rem;
+    word-break: keep-all;
+    position: relative;
+  }
+  .tab_cont .info_wrap li dd span::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    background-color: #000;
+  }
+  
+  /* ========================== PCB INFO ==========================*/
+  .pcb_info {
+      margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 120px;
+    border-radius: 15px;
+    background: url(/kmong-brainTect/img/pcb_bg.jpg) no-repeat center center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pcb_info div {
+    width: 50%;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .pcb_info div span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pcb_info div span::before {
+    content: "";
+    min-width: 27px;
+    height: 22px;
+    margin-right: 13px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .pcb_info div.pcb_phone span::before {
+    background-image: url(/kmong-brainTect/img/phone.png);
+  }
+  .pcb_info div.pcb_mail span::before {
+    background-image: url(/kmong-brainTect/img/mail.png);
+  }
+  
+  @media screen and (max-width: 991px) {
+    .tab_cont .slide_wrap .slide{max-width: 400px;
+        margin-right: 30px
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .tab_wrap li a {
+      font-size: 16px;
+    }
+  
+    .tab_cont .slide_wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  
+    .tab_cont .slide_wrap .slide {
+      margin-right: 0;
+      margin-bottom: 70px;
+    }
+  
+    .tab_cont .slide_wrap .slide_txt {
+      max-width: 502px;
+      width: 100%;
+    }
+  
+    .tab_cont .slide_wrap .slide_txt .slide_tit {
+      font-size: 45px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    .tab_cont .slide_wrap .slide_txt .slide_desc {
+      font-size: 18px;
+    }
+  
+    .tab_cont .info_wrap li {
+      padding: 35px 80px;
+    }
+  
+    .tab_cont .info_wrap li,
+  .tab_cont .info_wrap.third li {
+      width: 100%;
+      max-width: 700px;
+    }
+  
+    .tab_cont .info_wrap li + li {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  
+    .tab_cont .info_wrap li dl {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    }
+  
+    .tab_cont .info_wrap li dt {
+      margin-bottom: 0;
+      margin-right: 100px;
+    }
+  
+    .tab_cont .info_wrap li dt h3 {
+      margin-bottom: 25px;
+    }
+  
+    .tab_cont .info_wrap li dd {
+      max-width: 300px;
+      width: 100%;
+    }
+  
+    .tab_cont .info_wrap li dd br {
+      display: none;
+    }
+    .pcb_info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+   
+  }
+  @media screen and (max-width: 550px) {
+    
+    .tab_wrap li a {
+      font-size: 12px;
+    }
+  
+    .tab_cont .slide_wrap .slide_txt .slide_tit {
+      font-size: 35px;
+    }
+  
+    .tab_cont .slide_wrap .slide_txt .slide_desc {
+      font-size: 15px;
+      line-height: 26px;
+    }
+  
+    .tab_cont .info_wrap li {
+      padding: 20px;
+    }
+  
+    .tab_cont .info_wrap li dt {
+      margin-right: 25px;
+    }
+  
+    .tab_cont .info_wrap li dt span {
+      font-size: 12px;
+    }
+  
+    .tab_cont .info_wrap li dt h3 {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+  
+    .tab_cont .info_wrap li dd span {
+      font-size: 14px;
+    }
+  
+    .tab_cont .info_wrap li dt::after {
+      background-size: 60%;
+    }
+  
+    .tab_cont .info_wrap li dd br {
+      display: block;
+    }
+  
+    .pcb_info div {
+      font-size: 18px;
+    }
+  
+    .pcb_info div:first-child {
+      margin-bottom: 10px;
+    }
+    .pcb_info div span {
+        font-size: 16px;
+      }
+  }
+  
