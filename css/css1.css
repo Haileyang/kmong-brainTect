@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+/* ========================== COMMON ==========================*/
+body{
+    color: #131313;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;letter-spacing: -0.25px;
+}
+.font-bold{font-weight: 500;}
+.inr {max-width: 1320px;
+    margin:  0 auto;
+    padding: 0 35px;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+}
+/* ========================== SUB COMMON ==========================*/
+.sub-container{
+    padding: 107px 0 270px 0;
+}
+.sub-container__title{
+    font-size: 36px; line-height: 72px; 
+    color: #131313; font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+.sub-container__title::before{
+    content:"";
+    width: 93px; height: 21px;
+    background-color: #ccc;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+.sub-container__desc{
+    margin: 30px 0 0 0;
+    font-size: 20px; font-weight: 350; line-height: 36px;
+    color: #296489;text-align: center;
+}
+/* ========================== SUB1-2 : INTRO ==========================*/
+.intro-wrap{padding: 125px 0 150px 0 ;}
+.intro-title{font-size: 32px; line-height: 47px; font-weight: 400;}
+.intro-desc p{font-size: 18px; line-height: 30px;}
+.intro-desc p + p {margin-top: 42px;}
+.intro-text{display: inline;}
+.intro-img{display: inline;}
+.intro-img img{width: 600px; height: 525px;
+    display: inline-block; background-color: #ccc;
+}
+.circle-deco{
+    width: 500px; height: 490px;
+    display: inline-block; 
+    background-color: #ccc;
+
+}
+/* ========================== SUB1-2 : LOCATION ==========================*/
+.location-wrap{margin-top: 75px;}
+.location-info{margin-top: 90px;}
+.location-info ul{
+    border-top: 2px solid #131313;
+    border-bottom: 2px solid #131313;
+}
+.location-info li{
+    border-bottom: 1px solid #a9a9a9;
+    font-size: 18px;font-weight: 350; line-height: 36px;
+    color: #525252;
+    position: relative;
+    padding: 15px 0 15px 127px;
+}
+.location-info strong{
+    color: #0057a4; font-weight: 500;
+    min-width: 103px; height: 100%; 
+    background-color: #f7fbff;
+    display: inline-block;
+    text-align: center;
+    position: absolute; left: 0; top: 0;
+    display: inline-flex; justify-content: center; align-items: center;
+}
