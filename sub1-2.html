@@ -1,49 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="imagetoolbar" content="no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/css1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>브레인테크</title>
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/css/default.css?ver=210618">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/font_defualt.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/layout.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/sub.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/element.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/btn.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/board_modify.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/board_modify_responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/animate.min.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/swiper_layout.css">
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/swiper/dist/css/swiper.min.css">
+
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/slick-1.8.1/slick/slick/slick.css">
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/slick-1.8.1/slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/bootstrap_modified.css">
+
+    <!--
+<link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/owl/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/owl/assets/owl.theme.default.css">
+-->
+
+    <link rel="stylesheet"
+        href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/sidebar-menu.css">
+    <link rel='stylesheet' href='http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/hiraku.css'>
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/style.css">
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mobile-menu/modify.css">
+
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/css/responsive.css">
+    <!--[if lte IE 8]>
+<script src="http://brainpcb.co.kr/new1/js/html5.js"></script>
+<![endif]-->
+    <script>
+        // 자바스크립트에서 사용하는 전역변수 선언
+        var g5_url = "http://brainpcb.co.kr/new1";
+        var g5_bbs_url = "http://brainpcb.co.kr/new1/bbs";
+        var g5_is_member = "";
+        var g5_is_admin = "";
+        var g5_is_mobile = "";
+        var g5_bo_table = "";
+        var g5_sca = "";
+        var g5_editor = "";
+        var g5_cookie_domain = "";
+    </script>
+
+    <script src="http://brainpcb.co.kr/new1/js/jquery-1.12.4.min.js"></script>
+    <script src="http://brainpcb.co.kr/new1/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="http://brainpcb.co.kr/new1/js/jquery.menu.js?ver=210618"></script>
+    <script src="http://brainpcb.co.kr/new1/js/common.js?ver=210618"></script>
+    <script src="http://brainpcb.co.kr/new1/js/wrest.js?ver=210618"></script>
+    <script src="http://brainpcb.co.kr/new1/js/placeholders.min.js"></script>
+    <script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/swiper/dist/js/swiper.ani.js"></script>
+    <script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/swiper/dist/js/swiper.min.js"></script>
+    <!--<script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/bootstrap-carousel/carousel.js"></script>-->
+    <!--<script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/owl/owl.carousel.min.js"></script>-->
+    <script type="text/javascript"
+        src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/jquery-parallax/jquery.parallax-1.1.3.js">
+    </script>
+    <script src="http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/slick-1.8.1/slick/slick/slick.min.js">
+    </script>
+    <script type='text/javascript'
+        src='http://brainpcb.co.kr/new1/theme/theme-vk01/wzd_lib/plugin/mouse/gambit-smoothscroll-min.js'></script>
+    <link rel="stylesheet" href="http://brainpcb.co.kr/new1/js/font-awesome/css/font-awesome.min.css">
+
+
+    <!-- raon : 2021-11-18 -->
+    <link rel="stylesheet" href="/kmong-brainTect/css/css1.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <main class="sub-container">
-        <div class="inr">
+    <main id="sub_content">
+        <div class="container">
             <div class="sub-container__titleWrap">
                 <h1 class="sub-container__title">인사말</h1>
             </div>
             <section class="intro-wrap">
-                <div class="intro-text">
-                    <h2 class="intro-title">PCB 원부자재 사업의 선두주자, <br>
-                        <strong class="font-bold">주식회사 브레인 테크</strong> 입니다.
-                    </h2>
-                    <div class="intro-desc">
-                        <p>브레인테크는 인쇄회로기판 제조를 바탕으로 2005년 5월에 설립하여,
-                            인쇄회로기판 원부자재 유통, 인쇄회로기판 OEM전문기업입니다.</p>
-                            
-                        <p>현재 브레인테크의 유통사업은 국내외 원부자재 제조사와 정식 공급계약을 체결하여
-                            안정적인 재고관리 및 품질관리를 시행하고 있습니다.
-                            특히, 국내환경에 최적화된 보관창고, 인쇄회로기판의 숙련된 기술력을 접목한
-                            빠른 품질대응과 안정적인 수급을 바탕으로 Total Solution을 제공하여
-                            국내외 고객사의 경쟁력 향상에 이바지하고 있습니다.
-                            아울러, 브레인테크는 축적된 노하우를 바탕으로 전자제품, 관련 부품 및
-                            반제품의 개발, 유통 등으로 신규사업을 적극 확대하고 있습니다.</p>
-                            
-                        <p>앞으로 브레인테크는 ‘선도기업’, ‘지식과 경험‘, ‘기술의 전문성’이라는 기업 핵심가치를 바탕으로
-                        사람과 기술의 조화로 발전하는 미래를 만들기 위해 더욱 노력하겠습니다.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="intro-text">
+                            <h2 class="intro-title">PCB 원부자재 사업의 선두주자, <br>
+                                <strong class="font-bold">주식회사 브레인 테크</strong> 입니다.
+                            </h2>
+                            <div class="intro-desc">
+                                <p>브레인테크는 인쇄회로기판 제조를 바탕으로 2005년 5월에 설립하여,
+                                    인쇄회로기판 원부자재 유통, 인쇄회로기판 OEM전문기업입니다.</p>
+
+                                <p>현재 브레인테크의 유통사업은 국내외 원부자재 제조사와 정식 공급계약을 체결하여
+                                    안정적인 재고관리 및 품질관리를 시행하고 있습니다.
+                                    특히, 국내환경에 최적화된 보관창고, 인쇄회로기판의 숙련된 기술력을 접목한
+                                    빠른 품질대응과 안정적인 수급을 바탕으로 Total Solution을 제공하여
+                                    국내외 고객사의 경쟁력 향상에 이바지하고 있습니다.
+                                    아울러, 브레인테크는 축적된 노하우를 바탕으로 전자제품, 관련 부품 및
+                                    반제품의 개발, 유통 등으로 신규사업을 적극 확대하고 있습니다.</p>
+
+                                <p>앞으로 브레인테크는 ‘선도기업’, ‘지식과 경험‘, ‘기술의 전문성’이라는 기업 핵심가치를 바탕으로
+                                    사람과 기술의 조화로 발전하는 미래를 만들기 위해 더욱 노력하겠습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="intro-img">
+                            <img src="" alt="브레인테크 인사말 이미지">
+                        </figure>
                     </div>
                 </div>
-                <figure class="intro-img">
-                    <img src="" alt="브레인테크 인사말 이미지">
-                </figure>
             </section>
+
             <section class="bottom-banner">
                 <figure><img src="" alt="하단 배너 이미지"></figure>
             </section>
+            <span class="circle-deco"></span>
         </div>
-        <span class="circle-deco"></span>
     </main>
 </body>
+
 </html>
