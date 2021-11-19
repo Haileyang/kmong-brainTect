@@ -36,7 +36,7 @@ ul,li{
 .sub_content{position: relative;}
 #sub_content{
     padding-top: 107px;
-    padding-bottom: 270px;
+    padding-bottom: 300px;
 }
 .sub-container__title{
     font-size: 36px; line-height: 72px; 
@@ -57,7 +57,13 @@ ul,li{
     color: #296489;text-align: center;
 }
 @media(max-width: 767px){
-    .sub-container__desc{font-size: 14px; line-height: 20px;
+    #sub_content{padding: 60px 0 100px 0}
+    .sub-container__title::before{width: 55px;height: 12px;
+      background-size: 55px 12px;
+      margin-bottom: 16px;
+    }
+    .sub-container__title{font-size: 25px; line-height: 24px;}
+    .sub-container__desc{font-size: 14px; line-height: 18px;
         margin-top: 10px;
     }
     .mBr{display: block;}
@@ -71,7 +77,7 @@ ul,li{
 .intro-wrap{padding: 125px 0 150px 0 ;}
 .intro-wrap .row{display: flex; align-items: end;}
 .intro-title{font-size: 32px; line-height: 47px; font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 60px; margin-top: 0;
 }
 .intro-desc p{font-size: 17px; line-height: 30px; font-weight: 350; margin-bottom: 0;}
 .intro-desc p + p {margin-top: 42px;}
@@ -103,7 +109,7 @@ ul,li{
     .intro-img img{width: 60%;}
 }
 @media(max-width: 767px){
-    .intro-title{font-size: 20px; line-height: 30px; 
+    .intro-title{font-size: 18px; line-height: 24px; 
         margin-bottom: 20px;
     }
     .intro-desc p + p {margin-top: 20px;}
@@ -165,26 +171,37 @@ ul,li{
     padding-left: 50px;
 }
 @media(max-width: 991px){
-
     .location-wrap,
-    .location-info{padding-top: 40px}
+    .location-info{padding-top: 30px}
     .location-wrap{padding-bottom: 80px;}
 }
 @media(max-width: 767px){
     .location-info li{
-        font-size: 14px; line-height: 20px;
+        font-size: 13px; line-height: 20px;
         padding-left: 95px;
+        padding: 5px 0 5px 95px;
     }
     .location-info strong{min-width: 80px}
     #map_office{height: 250px!important;}
 }
 
 /* ========================== SUB2-2 : Android ==========================*/
-.sub-tab-visual {width: 100%; height: 430px;
+.sub-tab-visual {max-width: 100%; width: 100%;
+   /* height: 430px; */
+    padding-bottom: 35%;
     background-color: #ccc;
     display: flex; align-items: end; justify-content: center;
+    position: relative;
+}
+.sub2-1-visual{
+  background: url(../img/Android/sub2-2-1.png) no-repeat center / cover;
+}
+.sub2-2-visual{
+  background: url(../img/Android/sub2-2-2.png) no-repeat center / cover;
 }
 .sub-tabVisual-text{
+    position: absolute; left: 50%;bottom: 0;
+    transform: translateX(-50%);
     display: flex; align-items: center; justify-content: space-between;
     padding:60px 100px;
     background-color: #fff; 
@@ -192,6 +209,7 @@ ul,li{
     max-width: 935px; margin: 0 auto;
 }
 .sub-tabVisual-text h1{
+    font-family: "Prompt";
     font-size: 32px;
 }
 .sub-tabVisual-text h2{
@@ -205,10 +223,11 @@ ul,li{
 }
 .sub-tab-titWrap h3{margin: 0;
     text-transform: capitalize;
+    font-family: "Prompt";
     display: flex; align-items: center; justify-content: center;
     text-align: center;
-    line-height: 25px;
-    font-size: 20px; font-weight: 500;
+    line-height: 35px;
+    font-size: 30px; font-weight: 500;
 
 }
 .sub-tab-titWrap h3::before,
@@ -232,20 +251,34 @@ ul,li{
     }
 }
 @media(max-width: 767px){
+    .sub-tab-contentWrap{padding-top: 125px;}
+    .sub-tab-visual{padding-bottom: 60%;}
     .sub-tabVisual-text{display: block;
-        padding: 40px 0 25px 0;
+        padding: 30px 30px 20px 30px;
     }
-    .sub-tabVisual-text h2{line-height: 24px;}
-    .sub-tabVisual-text h2,
-    .sub-tabVisual-text h1{text-align: center; margin: 0;}
-    .sub-tabVisual-text h1{margin-bottom: 25px;}
+
+    .sub-tabVisual-text h1{text-align: center; margin: 0;
+      font-size: 22px; margin-bottom: 5px;
+    }
+    .sub-tabVisual-text h2{text-align: center;
+      margin: 0;
+      font-size: 12px; line-height: 18px;
+    }
     .sub-tab-content + .sub-tab-content{margin-top: 60px;}
+    .sub-tab-titWrap h3{font-size: 22px}
+    .sub-tab-titWrap h3::before, 
+    .sub-tab-titWrap h3::after{height:1px;
+      width: 70px;
+      margin-right: 10px;
+    }
+    .sub-tab-titWrap h3::after{margin: 0 0 0 10px}
+    .sub-tab-titWrap small{font-size: 14px;}
 }
 
 
 
 
-/* ========================== TAB ==========================*/
+/*  TAB */
 .tab_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -271,6 +304,7 @@ ul,li{
     letter-spacing: -0.03rem;
     background-color: #efefef;
   }
+  .tab_wrap li a:hover{color: #131313; text-decoration: none}
   .tab_wrap li:first-child a {
     border-left: 1px solid #cfcfcf;
   }
@@ -285,15 +319,13 @@ ul,li{
     background-color: #fff;
     border-bottom: 0;
   }
-  
-  /* ========================== CONTENTS ==========================*/
   .tab_cont {
     display: none;
   }
   .tab_cont.on {
     display: block;
   }
-  /* ========================== CONTENTS SLIDE WRAP ==========================*/
+  /*  CONTENTS SLIDE WRAP */
   .tab_cont .slide_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,7 +335,7 @@ ul,li{
             align-items: center;
     margin-bottom: 75px;
   }
-  /* ========================== CONTENTS SLIDE ==========================*/
+  /*  CONTENTS SLIDE */
   .tab_cont .slide_wrap .slide {
     max-width: 502px;
     width: 100%;
@@ -313,8 +345,10 @@ ul,li{
     background-color: #fcfcfc;
   }
   .tab_cont .slide_wrap .slide img {
-    width: 100%;
+    width: 100%; max-height: 300px;
+    object-fit: cover;
   }
+  .mySwiper .swiper-slide img{max-height:65px!important}
   .tab_cont .slide_wrap .slide .mySwiper2 {
     margin-bottom: 20px;
   }
@@ -335,13 +369,13 @@ ul,li{
     font-size: 17px;
   }
   
-  /* ========================== CONTENTS SLIDE TEXT ==========================*/
+  /*  CONTENTS SLIDE TEXT */
   .tab_cont .slide_wrap .slide_txt {
     width: calc(100% - 560px);
     flex: 1;
   }
   .tab_cont .slide_wrap .slide_txt .slide_tit {
-    margin-bottom: 50px;
+    margin-bottom: 50px; margin-top: 0;
     font-size: 48px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
@@ -351,8 +385,9 @@ ul,li{
     line-height: 36px;
     color: #525252;
     word-break: keep-all;
+    margin-bottom: 0;
   }
-  /* ========================== CONTENTS INFO WRAP ==========================*/
+  /*  CONTENTS INFO WRAP */
   .tab_cont .info_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -395,14 +430,14 @@ ul,li{
             align-items: center;
   }
   
-  /* ========================== CONTENTS INFO TOP ==========================*/
+  /*  CONTENTS INFO TOP */
   .tab_cont .info_wrap li dt {
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
   .tab_cont .info_wrap li dt span {
     display: block;
-    margin-bottom: 7px;
+    margin-bottom: 14px;
     font-size: 16px;
   }
   
@@ -411,20 +446,22 @@ ul,li{
   .tab_cont .info_wrap li dt h3 {
     margin-bottom: 40px;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 700; margin-top: 0;
   }
   
   .tab_cont .info_wrap li dt::after {
     content: "";
     display: block;
-    width: 117px;
-    height: 84px;
+    width: 95px;
+    height: 95px;
     margin: 0 auto;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size:  95px 95px;
+    
     
   }
-  /* ========================== CONTENTS INFO IMG ==========================*/
+  /*  CONTENTS INFO IMG */
   .tab_cont.ccl .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/ccl_info01.png);}
   .tab_cont.ccl .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/ccl_info02.png);}
   .tab_cont.ccl .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/ccl_info03.png);}
@@ -433,10 +470,10 @@ ul,li{
   .tab_cont.mccl .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/mccl_info02.png);}
   .tab_cont.mccl .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/mccl_info03.png);}
   .tab_cont.mccl .info_wrap li:nth-child(4) dt::after {background-image: url(/kmong-brainTect/img/ccl_info04.png);}
-  .tab_cont.psr .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/psr_info01.png);}
+  .tab_cont.psr .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/psr_info03.png);}
   .tab_cont.psr .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/psr_info02.png);}
-  .tab_cont.psr .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/psr_info03.png);}
-  .tab_cont.pcb .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/pcb_info02.png);}
+  .tab_cont.psr .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/psr_info01.png);}
+  .tab_cont.pcb .info_wrap li:nth-child(1) dt::after {background-image: url(/kmong-brainTect/img/pcb_info01.png);}
   .tab_cont.pcb .info_wrap li:nth-child(2) dt::after {background-image: url(/kmong-brainTect/img/pcb_info02.png);}
   .tab_cont.pcb .info_wrap li:nth-child(3) dt::after {background-image: url(/kmong-brainTect/img/mccl_info03.png);}
   .tab_cont.pcb .info_wrap li:nth-child(4) dt::after {background-image: url(/kmong-brainTect/img/ccl_info04.png);}
@@ -452,20 +489,20 @@ ul,li{
     min-height: 110px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+      justify-content: start;
   }
   
-  /* ========================== CONTENTS INFO TEXT ==========================*/
+  /*  CONTENTS INFO TEXT */
   .tab_cont .info_wrap li dd span {
     display: block;
     padding-left: 13px;
-    font-size: 16px;
+    font-size: 18px;
     color: #535353;
-    line-height: 30px;
+    line-height: 34px;
     letter-spacing: -0.03rem;
     word-break: keep-all;
     position: relative;
@@ -474,16 +511,16 @@ ul,li{
     content: "";
     width: 5px;
     height: 5px;
-    border-radius: 100%;
+    border-radius: 50%;
     position: absolute;
     left: 0;
     top: 13px;
     background-color: #000;
   }
   
-  /* ========================== PCB INFO ==========================*/
+  /*  PCB INFO */
   .pcb_info {
-      margin-top: 80px;
+    margin-top: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -491,8 +528,8 @@ ul,li{
     border-radius: 15px;
     background: url(/kmong-brainTect/img/pcb_bg.jpg) no-repeat center center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .pcb_info div {
     width: 50%;
@@ -500,26 +537,27 @@ ul,li{
     font-family: "Poppins", sans-serif;
     color: #fff;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 350;
   }
   .pcb_info div span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .pcb_info div span::before {
     content: "";
-    min-width: 27px;
-    height: 22px;
+    min-width: 30px;
+    height: 30px;
     margin-right: 13px;
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 30px 30px;
   }
   .pcb_info div.pcb_phone span::before {
     background-image: url(/kmong-brainTect/img/phone.png);
@@ -534,20 +572,25 @@ ul,li{
     }
   }
   @media screen and (max-width: 767px) {
+    .tab_wrap{margin: 25px 0 ;}
+    
     .tab_wrap li a {
-      font-size: 16px;
+      font-size: 11px;
+      height: 34px; line-height: 34px;
     }
   
     .tab_cont .slide_wrap {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 45px;
     }
-  
+    .tab_cont .slide_wrap .slide .mySwiper2{margin-bottom: 14px;}
     .tab_cont .slide_wrap .slide {
       margin-right: 0;
-      margin-bottom: 70px;
+      margin-bottom: 35px;
+      padding: 9px 10px;
     }
   
     .tab_cont .slide_wrap .slide_txt {
@@ -556,13 +599,15 @@ ul,li{
     }
   
     .tab_cont .slide_wrap .slide_txt .slide_tit {
-      font-size: 45px;
-      margin-bottom: 30px;
+      font-size: 25px;
+      margin-bottom: 20px;
       text-align: center;
+      
     }
   
     .tab_cont .slide_wrap .slide_txt .slide_desc {
-      font-size: 18px;
+      font-size: 14px; line-height: 20px;
+      text-align: center;
     }
   
     .tab_cont .info_wrap li {
@@ -570,24 +615,25 @@ ul,li{
     }
   
     .tab_cont .info_wrap li,
-  .tab_cont .info_wrap.third li {
+    .tab_cont .info_wrap.third li {
       width: 100%;
       max-width: 700px;
     }
   
     .tab_cont .info_wrap li + li {
       margin-left: 0;
-      margin-top: 30px;
+      margin-top: 12px;
     }
   
     .tab_cont .info_wrap li dl {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-bottom: 0;
     }
   
     .tab_cont .info_wrap li dt {
@@ -596,17 +642,20 @@ ul,li{
     }
   
     .tab_cont .info_wrap li dt h3 {
-      margin-bottom: 25px;
+      margin-bottom: 25px; margin-top: 0;
     }
   
     .tab_cont .info_wrap li dd {
       max-width: 300px;
       width: 100%;
+      justify-content: center;
     }
   
     .tab_cont .info_wrap li dd br {
       display: none;
     }
+    .tab_cont .slide_wrap .slide img{max-height: 250px}
+    .mySwiper .swiper-slide img{max-height: 45px !important;}
     .pcb_info {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -616,23 +665,20 @@ ul,li{
         -ms-flex-pack: center;
         justify-content: center;
     }
-   
-  }
-  @media screen and (max-width: 550px) {
-    
-    .tab_wrap li a {
-      font-size: 12px;
+    .pcb_info div span::before {
+      min-width: 25px;
+      height: 25px;
+      background-size: 25px 25px;
     }
-  
-    .tab_cont .slide_wrap .slide_txt .slide_tit {
-      font-size: 35px;
+    .pcb_info div span {
+      font-size: 14px;
     }
-  
-    .tab_cont .slide_wrap .slide_txt .slide_desc {
-      font-size: 15px;
-      line-height: 26px;
+    .pcb_info{min-height: 75px; 
+      border-radius: 5px
     }
-  
+    .pcb_info div:first-child {
+      margin-bottom: 5px;
+    }
     .tab_cont .info_wrap li {
       padding: 20px;
     }
@@ -642,16 +688,22 @@ ul,li{
     }
   
     .tab_cont .info_wrap li dt span {
-      font-size: 12px;
+      font-size: 10px;
+      margin-bottom: 5px;
     }
   
     .tab_cont .info_wrap li dt h3 {
-      margin-bottom: 15px;
-      font-size: 17px;
+      margin-bottom: 10px; margin-top: 0;
+      font-size: 16px;
+    }
+    .tab_cont .info_wrap li dt::after{
+      width: 90px;height: 90px;
+      background-size: 90px 90px;
     }
   
     .tab_cont .info_wrap li dd span {
       font-size: 14px;
+      line-height: 20px;
     }
   
     .tab_cont .info_wrap li dt::after {
@@ -661,16 +713,7 @@ ul,li{
     .tab_cont .info_wrap li dd br {
       display: block;
     }
-  
-    .pcb_info div {
-      font-size: 18px;
+    .tab_cont .info_wrap li dd span::before{width: 3px;height: 3px;
+      top: 10px;
     }
-  
-    .pcb_info div:first-child {
-      margin-bottom: 10px;
-    }
-    .pcb_info div span {
-        font-size: 16px;
-      }
   }
-  
